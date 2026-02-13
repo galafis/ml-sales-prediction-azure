@@ -1,0 +1,65 @@
+================================================================================
+  DESCRICAO DOS DATASETS - Projeto Gelato Magico
+================================================================================
+
+1. ice_cream_sales_original.csv
+   ----------------------------
+   Fonte: Inspirado no dataset publico do Kaggle
+          "Temperature and Ice Cream Sales"
+          (raphaelmanayon/temperature-and-ice-cream-sales)
+          Licenca: MIT
+
+   Descricao: 500 registros sinteticos que reproduzem a relacao entre
+   temperatura ambiente e receita de vendas de sorvete. A correlacao
+   entre as variaveis eh de aproximadamente 0.95.
+
+   Colunas:
+     - Temperature  (float) : Temperatura em graus Celsius (0 a 45 C)
+     - Revenue      (float) : Receita em dolares americanos (USD 10 a 600)
+
+
+2. gelato_magico_vendas.csv
+   -------------------------
+   Fonte: Dados sinteticos gerados para simular as vendas diarias da
+          sorveteria ficticia "Gelato Magico", localizada em Sao Paulo,
+          Brasil, ao longo do ano de 2025.
+
+   Descricao: 365 registros (01/jan/2025 a 31/dez/2025) com temperatura
+   diaria baseada no clima real de Sao Paulo (hemisferio sul) e vendas
+   influenciadas por temperatura, dia da semana, feriados e estacao.
+
+   Colunas:
+     - data            (str)   : Data no formato ISO (AAAA-MM-DD)
+     - temperatura     (float) : Temperatura media do dia em graus Celsius
+     - dia_da_semana   (int)   : Dia da semana (0=segunda ... 6=domingo)
+     - eh_feriado      (int)   : Indicador de feriado nacional (0 ou 1)
+     - estacao         (str)   : Estacao do ano no hemisferio sul
+                                 (verao / outono / inverno / primavera)
+     - vendas          (float) : Receita do dia em reais (R$)
+
+   Feriados nacionais considerados (2025):
+     01/jan  Confraternizacao Universal
+     03/mar  Carnaval (segunda)
+     04/mar  Carnaval (terca)
+     18/abr  Sexta-feira Santa
+     21/abr  Tiradentes
+     01/mai  Dia do Trabalho
+     19/jun  Corpus Christi
+     07/set  Independencia do Brasil
+     12/out  Nossa Sra. Aparecida
+     02/nov  Finados
+     15/nov  Proclamacao da Republica
+     20/nov  Consciencia Negra
+     25/dez  Natal
+
+   Modelo de geracao de vendas:
+     vendas_base = 50 + 15 * temperatura
+     + boost fim de semana  (+15%)
+     + boost feriado        (+20%)
+     + bonus sazonal        (verao +30, primavera +10, outono -10, inverno -25)
+     + ruido gaussiano      (~8% do valor base)
+
+================================================================================
+  Gerado automaticamente por src/generate_dataset.py
+  Seed fixa (42) para reprodutibilidade.
+================================================================================
