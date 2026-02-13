@@ -168,14 +168,31 @@ Foram treinados e avaliados **8 modelos de regressao** com divisao treino/teste 
 
 ### Graficos de Avaliacao
 
-O projeto gera automaticamente 35 graficos de avaliacao, incluindo:
+O projeto gera automaticamente 35 graficos de avaliacao. Abaixo os principais:
 
-- **Comparacao de MAE entre modelos** (`comparacao_modelos.png`)
-- **Predicoes vs valores reais** para cada modelo
-- **Analise de residuos** (distribuicao e padrao)
-- **Importancia de features** (Random Forest e Gradient Boosting)
-- **Curvas de aprendizado** para cada modelo
-- **Box plots de validacao cruzada**
+#### Comparacao de MAE entre Modelos
+
+![Comparacao de Modelos](outputs/graficos/comparacao_modelos.png)
+
+#### Predicoes vs Valores Reais (Lasso - Melhor Modelo)
+
+![Predicoes vs Real - Lasso](outputs/graficos/predicoes_vs_real_lasso.png)
+
+#### Analise de Residuos (Lasso)
+
+![Residuos - Lasso](outputs/graficos/residuos_lasso.png)
+
+#### Importancia de Features (Gradient Boosting)
+
+![Importancia de Features](outputs/graficos/importancia_features_gradient_boosting.png)
+
+#### Validacao Cruzada - Todos os Modelos
+
+![CV Scores](outputs/graficos/cv_scores.png)
+
+#### Curva de Aprendizado (Lasso)
+
+![Curva de Aprendizado - Lasso](outputs/graficos/curva_aprendizado_lasso.png)
 
 ---
 
@@ -189,12 +206,25 @@ A analise exploratoria dos dados revela:
 - **Sazonalidade clara**: verao (media ~R$490) vs inverno (media ~R$310)
 - **Distribuicao de temperatura**: media 22.4 C, desvio padrao 4.6 C (padrao realista para Sao Paulo)
 
-Os 6 graficos de EDA sao gerados automaticamente em `outputs/graficos/`:
-- Distribuicao de temperatura e vendas (histogramas)
-- Scatter plot temperatura vs vendas
-- Heatmap de correlacao
-- Vendas por dia da semana (barplot)
-- Vendas por estacao (boxplot)
+### Temperatura vs Vendas
+
+![Temperatura vs Vendas](outputs/graficos/temperatura_vs_vendas.png)
+
+### Correlacao entre Variaveis
+
+![Heatmap de Correlacao](outputs/graficos/correlacao_heatmap.png)
+
+### Distribuicao de Temperatura e Vendas
+
+| Temperatura | Vendas |
+|:-----------:|:------:|
+| ![Distribuicao Temperatura](outputs/graficos/distribuicao_temperatura.png) | ![Distribuicao Vendas](outputs/graficos/distribuicao_vendas.png) |
+
+### Vendas por Estacao e Dia da Semana
+
+| Por Estacao | Por Dia da Semana |
+|:-----------:|:-----------------:|
+| ![Vendas por Estacao](outputs/graficos/vendas_por_estacao.png) | ![Vendas por Dia da Semana](outputs/graficos/vendas_por_dia_semana.png) |
 
 ---
 
@@ -540,6 +570,26 @@ Key findings from the exploratory data analysis:
 - **Holiday effect**: sales ~20% higher on national holidays
 - **Clear seasonality**: summer (avg ~R$490) vs winter (avg ~R$310)
 - **Temperature distribution**: mean 22.4 C, std 4.6 C (realistic pattern for Sao Paulo)
+
+### Key Charts
+
+The project generates 35 evaluation charts automatically. Below are the most important ones:
+
+#### Temperature vs Sales
+
+![Temperature vs Sales](outputs/graficos/temperatura_vs_vendas.png)
+
+#### Model Comparison (MAE)
+
+![Model Comparison](outputs/graficos/comparacao_modelos.png)
+
+#### Predictions vs Actual (Lasso - Best Model)
+
+![Predictions vs Actual - Lasso](outputs/graficos/predicoes_vs_real_lasso.png)
+
+#### Feature Importance (Gradient Boosting)
+
+![Feature Importance](outputs/graficos/importancia_features_gradient_boosting.png)
 
 ---
 
