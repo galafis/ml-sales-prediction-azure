@@ -4,6 +4,7 @@
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.8-F7931E?logo=scikit-learn&logoColor=white)](https://scikit-learn.org)
 [![MLflow](https://img.shields.io/badge/MLflow-3.9-0194E2?logo=mlflow&logoColor=white)](https://mlflow.org)
 [![License: MIT](https://img.shields.io/badge/Licenca-MIT-green.svg)](LICENSE)
+[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED.svg?logo=docker)](Dockerfile)
 
 Projeto de Machine Learning para prever as vendas diarias de uma sorveteria ficticia ("Gelato Magico") com base na temperatura e outros fatores como dia da semana, feriados e estacao do ano. Desenvolvido como projeto do bootcamp **Microsoft Certification Challenge #5 - DP-100** da [DIO](https://www.dio.me/).
 
@@ -451,6 +452,7 @@ Este projeto esta licenciado sob a [Licenca MIT](LICENSE).
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.8-F7931E?logo=scikit-learn&logoColor=white)](https://scikit-learn.org)
 [![MLflow](https://img.shields.io/badge/MLflow-3.9-0194E2?logo=mlflow&logoColor=white)](https://mlflow.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED.svg?logo=docker)](Dockerfile)
 
 Machine Learning project to predict daily sales for a fictional ice cream shop ("Gelato Magico") based on temperature and other factors such as day of the week, holidays, and season. Developed as a project for the **Microsoft Certification Challenge #5 - DP-100** bootcamp by [DIO](https://www.dio.me/).
 
